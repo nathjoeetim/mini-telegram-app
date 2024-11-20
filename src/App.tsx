@@ -9,6 +9,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { Toaster } from "@/components/ui/toaster";
+
 import Profile_page from "./pages/profile_page";
 import DailyRewardScreen from "./components/daily_checkin";
 
@@ -27,8 +29,9 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <div className="bg-black flex flex-col h-full justify-center">
+    <div className="bg-black flex flex-col">
       <RouterProvider router={router} />
+      <Toaster />
     </div>
   );
 }

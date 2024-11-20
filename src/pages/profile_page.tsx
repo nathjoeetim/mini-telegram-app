@@ -1,5 +1,6 @@
 //
 
+import { Button } from "@/components/ui/button";
 import { walletTextFormater } from "../utils/caluclate";
 
 function Profile_page() {
@@ -22,11 +23,16 @@ function Profile_page() {
               {walletTextFormater("ksnjfnjanncajnckkamk")}
             </p>
           </div>
-          {/* <div className="flex flex-row items-center justify-between w-full">
-            <h2>Name :</h2>
-            <p className="text-[#95908a] text-sm">UserName</p>
-          </div> */}
         </div>
+      </div>
+      {/* change wallet address */}
+      <div className="flex flex-col w-full mx-auto mt-10">
+        <div className="border rounded-lg w-[100%] h-14 flex flex-row items-center justify-start px-3">
+          {walletTextFormater("ksnjfnjanncajnckkamk")}
+        </div>
+        <Button variant={"default"} type="button" className="mt-10 h-14">
+          Change Wallet Address
+        </Button>
       </div>
     </div>
   );

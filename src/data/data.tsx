@@ -21,3 +21,5 @@ export const levelMinPoint = [
   100000000, //Master
   500000000, //Lord
 ];
+
+// earning data and alises
